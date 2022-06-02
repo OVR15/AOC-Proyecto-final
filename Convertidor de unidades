@@ -1,0 +1,1916 @@
+#pragma once
+
+// uncomment to execute the rk1-utils:
+//    #include "rk1_Utils_demo.h"  // shows how the rk1-utils can be used
+
+#include "Header1.h"
+#include "Header2.h"
+#include <iostream>
+#include "Funciones.cpp"
+#include <string>
+#include <string>
+
+float cmAmetro(float cant);
+float cmApulgada(float cant);
+float cmApie(float cant);
+float cmAyarda(float cant);
+float cmAmilla(float cant);
+float metroAcm(float cant);
+float metroApulgada(float cant);
+float metroApie(float cant);
+float metroAyarda(float cant);
+float metroAmilla(float cant);
+float pulgadaAcm(float cant);
+float pulgadaAmetro(float cant);
+float pulgadaApie(float cant);
+float pulgadaAyarda(float cant);
+float pulgadaAmilla(float cant);
+float pieAcm(float cant);
+float pieAmetro(float cant);
+float pieApulgada(float cant);
+float pieAyarda(float cant);
+float pieAmilla(float cant);
+float yardaAcm(float cant);
+float yardaAmetro(float cant);
+float yardaApulgada(float cant);
+float yardaApie(float cant);
+float yardaAmilla(float cant);
+float millaAcm(float cant);
+float millaAmetro(float cant);
+float millaApulgada(float cant);
+float millaApie(float cant);
+float millaAyarda(float cant);
+float cm2Am2(float cant);
+float cm2Apulgada2(float cant);
+float cm2Apie2(float cant);
+float cm2Ayarda2(float cant);
+float m2Acm2(float cant);
+float m2Apulgada2(float cant);
+float m2Apie2(float cant);
+float m2Ayarda2(float cant);
+float pulgada2Acm2(float cant);
+float pulgada2Am2(float cant);
+float pulgada2Apie2(float cant);
+float pulgada2Ayarda2(float cant);
+float pie2Acm2(float cant);
+float pie2Am2(float cant);
+float pie2Apulgada2(float cant);
+float pie2Ayarda2(float cant);
+float yarda2Acm2(float cant);
+float yarda2Am2(float cant);
+float yarda2Apulgada2(float cant);
+float yarda2Apie2(float cant);
+float cm3Alitro(float cant);
+float cm3Am3(float cant);
+float cm3Agalon(float cant);
+float m3Acm3(float cant);
+float m3Alitro(float cant);
+float m3Agalon(float cant);
+float litroAcm3(float cant);
+float litroAm3(float cant);
+float litroAgalon(float cant);
+float galonAcm3(float cant);
+float galonAm3(float cant);
+float galonAlitro(float cant);
+float gramosAkg(float cant);
+float gramosAonza(float cant);
+float gramosAlibra(float cant);
+float gramosAtonelada(float cant);
+float kgAgramos(float cant);
+float kgAonza(float cant);
+float kgAlibra(float cant);
+float kgAtonelada(float cant);
+float onzaAgramos(float cant);
+float onzaAkg(float cant);
+float onzaAlibra(float cant);
+float onzaAtonelada(float cant);
+float libraAkg(float cant);
+float libraAgramos(float cant);
+float libraAonza(float cant);
+float libraAtonelada(float cant);
+float toneladaAgramos(float cant);
+float toneladaAkg(float cant);
+float toneladaAonza(float cant);
+float toneladaAlibra(float cant);
+float dinaAnm(float cant);
+float nmAdina(float cant);
+float lbgaloAlbpie3(float cant);
+float lbgalonAkgm3(float cant);
+float lbgalonAgcm3(float cant);
+float lbpie3Albgalon(float cant);
+float lbpie3Akgm3(float cant);
+float lbpie3Agcm3(float cant);
+float kgm3Albgalon(float cant);
+float kgm3Albpie3(float cant);
+float kgm3Agcm3(float cant);
+float gcm3Albgalon(float cant);
+float gcm3Albpie3(float cant);
+float gcm3Akgm3(float cant);
+namespace CppCLRWinFormsProject {
+
+  using namespace std;
+  using namespace System;
+  using namespace System::ComponentModel;
+  using namespace System::Collections;
+  using namespace System::Windows::Forms;
+  using namespace System::Data;
+  using namespace System::Drawing;
+
+  /// <summary>
+  /// Summary for Form1
+  /// </summary>
+  public ref class Form1 : public System::Windows::Forms::Form
+  {
+  public:
+    Form1(void)
+    {
+      InitializeComponent();
+      //
+      //TODO: Add the constructor code here
+      //
+
+      // uncomment to execute the rk1-utils:
+      //    N_rk1_Utils_demo::execute(); // shows how the rk1-utils can be used
+
+    }
+
+  protected:
+    /// <summary>
+    /// Clean up any resources being used.
+    /// </summary>
+    ~Form1()
+    {
+      if (components)
+      {
+        delete components;
+      }
+    }
+  private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
+  private: System::Windows::Forms::Button^ button1;
+  private: System::Windows::Forms::ComboBox^ comboBox1;
+
+  private: System::Windows::Forms::ComboBox^ comboBox2;
+
+
+  private: System::Windows::Forms::TextBox^ textBox1;
+  private: System::Windows::Forms::TextBox^ textBox2;
+
+
+  private: System::Windows::Forms::Button^ button2;
+
+  private: System::Windows::Forms::Label^ label1;
+  private: System::Windows::Forms::Label^ label3;
+  private: System::Windows::Forms::Label^ label6;
+
+
+
+  protected:
+
+
+
+
+
+  protected:
+
+  private:
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    System::ComponentModel::Container^ components;
+
+#pragma region Windows Form Designer generated code
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    void InitializeComponent(void)
+    {
+        this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
+        this->button1 = (gcnew System::Windows::Forms::Button());
+        this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+        this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+        this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+        this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+        this->button2 = (gcnew System::Windows::Forms::Button());
+        this->label1 = (gcnew System::Windows::Forms::Label());
+        this->label3 = (gcnew System::Windows::Forms::Label());
+        this->label6 = (gcnew System::Windows::Forms::Label());
+        this->SuspendLayout();
+        // 
+        // button1
+        // 
+        this->button1->Location = System::Drawing::Point(80, 210);
+        this->button1->Name = L"button1";
+        this->button1->Size = System::Drawing::Size(75, 23);
+        this->button1->TabIndex = 0;
+        this->button1->Text = L"Seleccionar";
+        this->button1->UseVisualStyleBackColor = true;
+        this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+        // 
+        // comboBox1
+        // 
+        this->comboBox1->FormattingEnabled = true;
+        this->comboBox1->Location = System::Drawing::Point(59, 155);
+        this->comboBox1->Name = L"comboBox1";
+        this->comboBox1->Size = System::Drawing::Size(121, 21);
+        this->comboBox1->TabIndex = 1;
+        this->comboBox1->Text = L"Unidad1";
+        // 
+        // comboBox2
+        // 
+        this->comboBox2->FormattingEnabled = true;
+        this->comboBox2->Location = System::Drawing::Point(317, 155);
+        this->comboBox2->Name = L"comboBox2";
+        this->comboBox2->Size = System::Drawing::Size(121, 21);
+        this->comboBox2->TabIndex = 3;
+        this->comboBox2->Text = L"Unidad2";
+        this->comboBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::comboBox2_SelectedIndexChanged);
+        // 
+        // textBox1
+        // 
+        this->textBox1->BackColor = System::Drawing::SystemColors::Info;
+        this->textBox1->Location = System::Drawing::Point(317, 74);
+        this->textBox1->Name = L"textBox1";
+        this->textBox1->Size = System::Drawing::Size(121, 20);
+        this->textBox1->TabIndex = 6;
+        this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+        this->textBox1->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
+        // 
+        // textBox2
+        // 
+        this->textBox2->Location = System::Drawing::Point(59, 74);
+        this->textBox2->Name = L"textBox2";
+        this->textBox2->Size = System::Drawing::Size(121, 20);
+        this->textBox2->TabIndex = 7;
+        this->textBox2->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+        this->textBox2->TextChanged += gcnew System::EventHandler(this, &Form1::textBox2_TextChanged);
+        // 
+        // button2
+        // 
+        this->button2->Location = System::Drawing::Point(326, 210);
+        this->button2->Name = L"button2";
+        this->button2->Size = System::Drawing::Size(75, 23);
+        this->button2->TabIndex = 10;
+        this->button2->Text = L"Calcular";
+        this->button2->UseVisualStyleBackColor = true;
+        this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
+        // 
+        // label1
+        // 
+        this->label1->AutoSize = true;
+        this->label1->BackColor = System::Drawing::Color::Transparent;
+        this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+            static_cast<System::Byte>(0)));
+        this->label1->Location = System::Drawing::Point(38, 47);
+        this->label1->Name = L"label1";
+        this->label1->Size = System::Drawing::Size(165, 24);
+        this->label1->TabIndex = 13;
+        this->label1->Text = L"Ingresa el valor";
+        this->label1->Click += gcnew System::EventHandler(this, &Form1::label1_Click);
+        // 
+        // label3
+        // 
+        this->label3->AutoSize = true;
+        this->label3->BackColor = System::Drawing::Color::Transparent;
+        this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+            static_cast<System::Byte>(0)));
+        this->label3->ImageAlign = System::Drawing::ContentAlignment::BottomCenter;
+        this->label3->Location = System::Drawing::Point(322, 47);
+        this->label3->Name = L"label3";
+        this->label3->Size = System::Drawing::Size(112, 24);
+        this->label3->TabIndex = 14;
+        this->label3->Text = L"Resultado";
+        // 
+        // label6
+        // 
+        this->label6->AutoSize = true;
+        this->label6->BackColor = System::Drawing::Color::Transparent;
+        this->label6->Font = (gcnew System::Drawing::Font(L"Arial", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+            static_cast<System::Byte>(0)));
+        this->label6->Location = System::Drawing::Point(25, 118);
+        this->label6->Name = L"label6";
+        this->label6->Size = System::Drawing::Size(198, 24);
+        this->label6->TabIndex = 15;
+        this->label6->Text = L"Unidad a Convertir";
+        // 
+        // Form1
+        // 
+        this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+        this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+        this->BackColor = System::Drawing::Color::CadetBlue;
+        this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+        this->ClientSize = System::Drawing::Size(544, 367);
+        this->Controls->Add(this->label6);
+        this->Controls->Add(this->label3);
+        this->Controls->Add(this->label1);
+        this->Controls->Add(this->button2);
+        this->Controls->Add(this->textBox2);
+        this->Controls->Add(this->textBox1);
+        this->Controls->Add(this->comboBox2);
+        this->Controls->Add(this->comboBox1);
+        this->Controls->Add(this->button1);
+        this->Name = L"Form1";
+        this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+        this->Text = L"Conversion de Unidades";
+        this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+        this->ResumeLayout(false);
+        this->PerformLayout();
+
+    }
+#pragma endregion
+
+   // You can call the functions at a button click. If you prefer, 
+    // you can call them by clicking a menu item.
+
+
+
+  private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
+      string str;
+      
+      comboBox1->Items->Add("Cm");
+      comboBox1->Items->Add("Metro");
+      comboBox1->Items->Add("Pulgada");
+      comboBox1->Items->Add("Pie");
+      comboBox1->Items->Add("Yarda");
+      comboBox1->Items->Add("Milla");
+      comboBox1->Items->Add("SUPERFICIE");
+      comboBox1->Items->Add("Cm^2");
+      comboBox1->Items->Add("M^2");
+      comboBox1->Items->Add("Pulgada^2");
+      comboBox1->Items->Add("Pie^2");
+      comboBox1->Items->Add("Yarda^2");
+      comboBox1->Items->Add("VOLUMEN");
+      comboBox1->Items->Add("Cm^3");
+      comboBox1->Items->Add("Litro");
+      comboBox1->Items->Add("M^3");
+      comboBox1->Items->Add("Galon");
+      comboBox1->Items->Add("DENSIDAD");
+      comboBox1->Items->Add("g/cm^3");
+      comboBox1->Items->Add("kg/m^3");
+      comboBox1->Items->Add("lb/pie^3");
+      comboBox1->Items->Add("lb/galon");
+      comboBox1->Items->Add("MASA");
+      comboBox1->Items->Add("Gramos");
+      comboBox1->Items->Add("Kilogramos");
+      comboBox1->Items->Add("Onza");
+      comboBox1->Items->Add("Libra");
+      comboBox1->Items->Add("Tonelada");
+      comboBox1->Items->Add("PRESION");
+      comboBox1->Items->Add("dina/m^2");
+      comboBox1->Items->Add("N/m^2");
+      
+  }
+  private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+      if (comboBox1->Text == "Cm") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Metro");
+          comboBox2->Items->Add("Pulgada");
+          comboBox2->Items->Add("Pie");
+          comboBox2->Items->Add("Yarda");
+          comboBox2->Items->Add("Milla");
+      }
+      else if (comboBox1->Text == "Metro") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm");
+          comboBox2->Items->Add("Pulgada");
+          comboBox2->Items->Add("Pie");
+          comboBox2->Items->Add("Yarda");
+          comboBox2->Items->Add("Milla");
+      }
+      else if (comboBox1->Text == "Pulgada") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm");
+          comboBox2->Items->Add("Metro");
+          comboBox2->Items->Add("Pie");
+          comboBox2->Items->Add("Yarda");
+          comboBox2->Items->Add("Milla");
+      }
+      else if (comboBox1->Text == "Pie") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm");
+          comboBox2->Items->Add("Metro");
+          comboBox2->Items->Add("Pulgada");
+          comboBox2->Items->Add("Yarda");
+          comboBox2->Items->Add("Milla");
+      }
+      else if (comboBox1->Text == "Yarda") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm");
+          comboBox2->Items->Add("Metro");
+          comboBox2->Items->Add("Pulgada");
+          comboBox2->Items->Add("Pie");
+          comboBox2->Items->Add("Milla");
+      }
+      else if (comboBox1->Text == "Milla") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm");
+          comboBox2->Items->Add("Metro");
+          comboBox2->Items->Add("Pulgada");
+          comboBox2->Items->Add("Pie");
+          comboBox2->Items->Add("Yarda");
+      }
+      else if (comboBox1->Text == "Cm^2") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("M^2");
+          comboBox2->Items->Add("Pulgada^2");
+          comboBox2->Items->Add("Pie^2");
+          comboBox2->Items->Add("Yarda^2");
+         // comboBox2->Items->Add("Milla^2");
+      }
+      else if (comboBox1->Text == "M^2") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm^2");
+          comboBox2->Items->Add("Pulgada^2");
+          comboBox2->Items->Add("Pie^2");
+          comboBox2->Items->Add("Yarda^2");
+        //  comboBox2->Items->Add("Milla^2");
+      }
+      else if (comboBox1->Text == "Pulgada^2") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm^2");
+          comboBox2->Items->Add("M^2");
+          comboBox2->Items->Add("Pie^2");
+          comboBox2->Items->Add("Yarda^2");
+        //  comboBox2->Items->Add("Milla^2");
+      }
+      else if (comboBox1->Text == "Pie^2") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm^2");
+          comboBox2->Items->Add("Pulgada^2");
+          comboBox2->Items->Add("M^2");
+          comboBox2->Items->Add("Yarda^2");
+        //  comboBox2->Items->Add("Milla^2");
+      }
+      else if (comboBox1->Text == "Yarda^2") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Cm^2");
+          comboBox2->Items->Add("Pulgada^2");
+          comboBox2->Items->Add("Pie^2");
+          comboBox2->Items->Add("M^2");
+         // comboBox2->Items->Add("Milla^2");
+      }
+      else if (comboBox1->Text == "Cm^3") {
+          comboBox2->Items->Clear();
+          comboBox2->Items->Add("Litro");
+          comboBox2->Items->Add("M^3");
+          comboBox2->Items->Add("Galon");
+      }
+      else if (comboBox1->Text == "Litro") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("Cm^3");
+        comboBox2->Items->Add("M^3");
+        comboBox2->Items->Add("Galon");
+      }
+      else if (comboBox1->Text == "M^3") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("Litro");
+        comboBox2->Items->Add("Cm^3");
+        comboBox2->Items->Add("Galon");
+      }
+      else if (comboBox1->Text == "Galon") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("Cm^3");
+        comboBox2->Items->Add("Litro");
+        comboBox2->Items->Add("M^3");
+      }
+      else if (comboBox1->Text == "g/cm^3") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("kg/m^3");
+        comboBox2->Items->Add("lb/pie^3");
+        comboBox2->Items->Add("lb/galon");
+      }
+      else if (comboBox1->Text == "kg/m^3") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("g/cm^3");
+        comboBox2->Items->Add("lb/pie^3");
+        comboBox2->Items->Add("lb/galon");
+      }
+      else if (comboBox1->Text == "lb/pie^3") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("g/cm^3");
+        comboBox2->Items->Add("kg/m^3");
+        comboBox2->Items->Add("lb/galon");
+      }
+      else if (comboBox1->Text == "lb/galon") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("g/cm^3");
+      comboBox2->Items->Add("lb/pie^3");
+      comboBox2->Items->Add("kg/m^3");
+      }
+      else if (comboBox1->Text == "Gramos") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("Kilogramos");
+        comboBox2->Items->Add("Onza");
+        comboBox2->Items->Add("Libra");
+        comboBox2->Items->Add("Tonelada");
+      }
+      else if (comboBox1->Text == "Kilogramos") {
+        comboBox2->Items->Clear();
+        comboBox2->Items->Add("Gramos");
+        comboBox2->Items->Add("Onza");
+        comboBox2->Items->Add("Libra");
+        comboBox2->Items->Add("Tonelada");
+      }
+      else if (comboBox1->Text == "Onza") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("Kilogramos");
+      comboBox2->Items->Add("Gramos");
+      comboBox2->Items->Add("Libra");
+      comboBox2->Items->Add("Tonelada");
+}
+      else if (comboBox1->Text == "Libra") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("Kilogramos");
+      comboBox2->Items->Add("Onza");
+      comboBox2->Items->Add("Gramos");
+      comboBox2->Items->Add("Tonelada");
+}
+      else if (comboBox1->Text == "Tonelada") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("Kilogramos");
+      comboBox2->Items->Add("Onza");
+      comboBox2->Items->Add("Libra");
+      comboBox2->Items->Add("Gramos");
+}
+      else if (comboBox1->Text == "dina/m^2") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("N/m^2");
+}
+      else if (comboBox1->Text == "N/m^2") {
+      comboBox2->Items->Clear();
+      comboBox2->Items->Add("dina/m^2");
+}
+  }
+private: System::Void comboBox2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+    
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+
+}
+
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+    float value = Convert::ToDouble(textBox2->Text);
+    //LONGITUD
+    if (comboBox1->Text == "Cm" && comboBox2->Text == "Metro") {
+        float num = cmAmetro(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Cm" && comboBox2->Text == "Pulgada") {
+        float num = cmApulgada(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Cm" && comboBox2->Text == "Pie") {
+        float num = cmApie(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Cm" && comboBox2->Text == "Yarda") {
+        float num = cmAyarda(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Cm" && comboBox2->Text == "Milla") {
+        float num = cmAmilla(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Metro" && comboBox2->Text == "Cm") {
+        float num = metroAcm(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Metro" && comboBox2->Text == "Pulgada") {
+        float num = metroApulgada(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Metro" && comboBox2->Text == "Pie") {
+        float num = metroApie(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Metro" && comboBox2->Text == "Yarda") {
+        float num = metroAyarda(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Metro" && comboBox2->Text == "Milla") {
+        float num = metroAmilla(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pulgada" && comboBox2->Text == "Cm") {
+        float num = pulgadaAcm(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pulgada" && comboBox2->Text == "Metro") {
+        float num = pulgadaAmetro(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pulgada" && comboBox2->Text == "Pie") {
+        float num = pulgadaApie(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pulgada" && comboBox2->Text == "Yarda") {
+        float num = pulgadaAyarda(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pulgada" && comboBox2->Text == "Milla") {
+        float num = pulgadaAmilla(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pie" && comboBox2->Text == "Cm") {
+        float num = pieAcm(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pie" && comboBox2->Text == "Metro") {
+        float num = pieAmetro(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pie" && comboBox2->Text == "Pulgada") {
+        float num = pieApulgada(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pie" && comboBox2->Text == "Yarda") {
+        float num = pieAyarda(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Pie" && comboBox2->Text == "Milla") {
+        float num = pieAmilla(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Yarda" && comboBox2->Text == "Cm") {
+        float num = yardaAcm(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Yarda" && comboBox2->Text == "Metro") {
+        float num = yardaAmetro(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Yarda" && comboBox2->Text == "Pulgada") {
+        float num = yardaApulgada(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Yarda" && comboBox2->Text == "Pie") {
+        float num = yardaApie(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Yarda" && comboBox2->Text == "Milla") {
+        float num = yardaAmilla(value);
+        textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Milla" && comboBox2->Text == "Cm") {
+    float num = millaAcm(value);
+    textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Milla" && comboBox2->Text == "Metro") {
+    float num = millaAmetro(value);
+    textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Milla" && comboBox2->Text == "Pulgada") {
+    float num = millaApulgada(value);
+    textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Milla" && comboBox2->Text == "Pie") {
+    float num = millaApie(value);
+    textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Milla" && comboBox2->Text == "Yarda") {
+    float num = millaAyarda(value);
+    textBox1->Text = num.ToString();
+    }
+    //SUPERFICIE-------------------------------------------------------
+    else if (comboBox1->Text == "Cm^2" && comboBox2->Text == "M^2") {
+    float num = cm2Am2(value);
+    textBox1->Text = num.ToString();
+    }
+    else if (comboBox1->Text == "Cm^2" && comboBox2->Text == "Pulgada^2") {
+    float num = cm2Apulgada2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Cm^2" && comboBox2->Text == "Pie^2") {
+    float num = cm2Apie2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Cm^2" && comboBox2->Text == "Yarda^2") {
+    float num = cm2Ayarda2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^2" && comboBox2->Text == "Cm^2") {
+    float num = m2Acm2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^2" && comboBox2->Text == "Pulgada^2") {
+    float num = m2Apulgada2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^2" && comboBox2->Text == "Pie^2") {
+    float num = m2Apie2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^2" && comboBox2->Text == "Yarda^2") {
+    float num = m2Ayarda2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pulgada^2" && comboBox2->Text == "Cm^2") {
+    float num = pulgada2Acm2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pulgada^2" && comboBox2->Text == "M^2") {
+    float num = pulgada2Am2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pulgada^2" && comboBox2->Text == "Pie^2") {
+    float num = pulgada2Apie2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pulgada^2" && comboBox2->Text == "Yarda^2") {
+    float num = pulgada2Ayarda2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pie^2" && comboBox2->Text == "Cm^2") {
+    float num = pie2Acm2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pie^2" && comboBox2->Text == "M^2") {
+    float num = pie2Am2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pie^2" && comboBox2->Text == "Pulgada^2") {
+    float num = pie2Apulgada2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Pie^2" && comboBox2->Text == "Yarda^2") {
+    float num = pie2Ayarda2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Yarda^2" && comboBox2->Text == "Cm^2") {
+    float num = yarda2Acm2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Yarda^2" && comboBox2->Text == "M^2") {
+    float num = yarda2Am2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Yarda^2" && comboBox2->Text == "Pulgada^2") {
+    float num = yarda2Apulgada2(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Yarda^2" && comboBox2->Text == "Pie^2") {
+    float num = yarda2Apie2(value);
+    textBox1->Text = num.ToString();
+}
+//VOLUMEN----------------------------------
+    else if (comboBox1->Text == "Cm^3" && comboBox2->Text == "Litro") {
+    float num = cm3Alitro(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Cm^3" && comboBox2->Text == "M^3") {
+    float num = cm3Am3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Cm^3" && comboBox2->Text == "Galon") {
+    float num = cm3Agalon(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^3" && comboBox2->Text == "Litro") {
+    float num = m3Alitro(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^3" && comboBox2->Text == "Cm^3") {
+    float num = m3Acm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "M^3" && comboBox2->Text == "Galon") {
+    float num = m3Agalon(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Galon" && comboBox2->Text == "Litro") {
+    float num = galonAlitro(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Galon" && comboBox2->Text == "Cm^3") {
+    float num = galonAcm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Galon" && comboBox2->Text == "M^3") {
+    float num = galonAm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Litro" && comboBox2->Text == "Cm^3") {
+    float num = litroAcm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Litro" && comboBox2->Text == "M^3") {
+    float num = litroAm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Litro" && comboBox2->Text == "Galon") {
+    float num = litroAgalon(value);
+    textBox1->Text = num.ToString();
+}
+//DENSIDAD-------------------------------
+    else if (comboBox1->Text == "g/cm^3" && comboBox2->Text == "kg/m^3") {
+    float num = gcm3Akgm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "g/cm^3" && comboBox2->Text == "lb/pie^3") {
+    float num = gcm3Albpie3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "g/cm^3" && comboBox2->Text == "lb/galon") {
+    float num = gcm3Albgalon(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "kg/m^3" && comboBox2->Text == "g/cm^3") {
+    float num = kgm3Agcm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "kg/m^3" && comboBox2->Text == "lb/pie^3") {
+    float num = kgm3Albpie3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "kg/m^3" && comboBox2->Text == "lb/galon") {
+    float num = kgm3Albgalon(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/pie^3" && comboBox2->Text == "g/cm^3") {
+    float num = lbpie3Agcm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/pie^3" && comboBox2->Text == "kg/m^3") {
+    float num = lbpie3Akgm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/pie^3" && comboBox2->Text == "lb/galon") {
+    float num = lbpie3Albgalon(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/galon" && comboBox2->Text == "g/cm^3") {
+    float num = lbgalonAgcm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/galon" && comboBox2->Text == "kg/m^3") {
+    float num = lbgalonAkgm3(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "lb/galon" && comboBox2->Text == "lb/pie^3") {
+    float num = lbgaloAlbpie3(value);
+    textBox1->Text = num.ToString();
+}
+//MASA---------------------------------------
+    else if (comboBox1->Text == "Gramos" && comboBox2->Text == "Kilogramos") {
+    float num = gramosAkg(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Gramos" && comboBox2->Text == "Onza") {
+    float num = gramosAonza(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Gramos" && comboBox2->Text == "Libra") {
+    float num = gramosAlibra(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Gramos" && comboBox2->Text == "Tonelada") {
+    float num = gramosAtonelada(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Onza" && comboBox2->Text == "Kilogramos") {
+    float num = onzaAkg(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Onza" && comboBox2->Text == "Gramos") {
+    float num = onzaAgramos(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Onza" && comboBox2->Text == "Libra") {
+    float num = onzaAlibra(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Onza" && comboBox2->Text == "Tonelada") {
+    float num = onzaAtonelada(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Libra" && comboBox2->Text == "Kilogramos") {
+    float num = libraAkg(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Libra" && comboBox2->Text == "Gramos") {
+    float num = libraAgramos(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Libra" && comboBox2->Text == "Onza") {
+    float num = libraAonza(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Libra" && comboBox2->Text == "Tonelada") {
+    float num = libraAtonelada(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Tonelada" && comboBox2->Text == "Kilogramos") {
+    float num = toneladaAkg(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Tonelada" && comboBox2->Text == "Gramos") {
+    float num = toneladaAgramos(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Tonelada" && comboBox2->Text == "Onza") {
+    float num = toneladaAonza(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Tonelada" && comboBox2->Text == "Libra") {
+    float num = toneladaAlibra(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Kilogramos" && comboBox2->Text == "Gramos") {
+    float num = kgAgramos(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Kilogramos" && comboBox2->Text == "Onza") {
+    float num = kgAonza(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Kilogramos" && comboBox2->Text == "Libra") {
+    float num = kgAlibra(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "Kilogramos" && comboBox2->Text == "Tonelada") {
+    float num = kgAtonelada(value);
+    textBox1->Text = num.ToString();
+}
+//PRESION-------------------------
+    else if (comboBox1->Text == "dina/m^2" && comboBox2->Text == "N/m^2") {
+    float num = dinaAnm(value);
+    textBox1->Text = num.ToString();
+}
+    else if (comboBox1->Text == "N/m^2" && comboBox2->Text == "dina/m^2") {
+    float num = nmAdina(value);
+    textBox1->Text = num.ToString();
+}
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+    
+}
+private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+}; // end of class Form1
+} // end of namespace CppCLRWinFormsProject
+
+
+float cmAmetro(float cant) {
+    int intCant = (int)(cant * 100);
+    int conversion = 0;
+    
+    __asm {
+        
+        mov eax, 10
+        mov ebx,intCant
+        mul ebx
+        mov conversion,eax
+
+    }
+    return (float)conversion/100000;
+}
+float cmApulgada(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax,393
+        mul intCant
+        mov conversion,eax
+    }
+    return (float)conversion/10000;
+}
+float cmApie(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax,328
+        mul intCant
+        mov conversion,eax
+    }
+    return (float)conversion / 100000;
+}
+float cmAyarda(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 10903
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000000;
+}
+float cmAmilla(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 621
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000000000;
+}
+float metroAcm(float cant) {
+    int intCant = (int)cant;
+    int conversion = 0;
+    __asm {
+        mov eax, 100
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float metroApulgada(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3937
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000;
+}
+float metroApie(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 328
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float metroAyarda(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1094
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000;
+}
+float metroAmilla(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1609
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float pulgadaAcm(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 254
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float pulgadaAmetro(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 254
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float pulgadaApie(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 8333
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000000;
+}
+float pulgadaAyarda(float cant) {
+        int intCant = (int)(cant * 10);
+        int conversion = 0;
+        __asm {
+            mov eax,2777
+            mul intCant
+            mov conversion,eax
+        }
+        return (float)conversion/1000000;
+}
+float pulgadaAmilla(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax,15782
+        mul intCant
+        mov conversion,eax
+    }
+    return (float)conversion / 10000000000;
+}
+float pieAcm(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3048
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float pieAmetro(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3048
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float pieApulgada(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 12
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float pieAyarda(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3333
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float pieAmilla(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1893
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float yardaAcm(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 9144
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float yardaAmetro(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 9144
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float yardaApulgada(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 36
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float yardaApie(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float yardaAmilla(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 5681
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float millaAcm(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 160934
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float millaAmetro(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 160934
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float millaApulgada(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 63360
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float millaApie(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 5280
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float millaAyarda(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1760
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10;
+}
+float cm2Am2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 10
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float cm2Apulgada2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 155
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000;
+}
+float cm2Apie2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1076
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000000;
+}
+float cm2Ayarda2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 11959
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000000000;
+}
+float m2Acm2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 10000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float m2Apulgada2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1550
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float m2Apie2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1076
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 1000;
+}
+float m2Ayarda2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 11959
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float pulgada2Acm2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 6451
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float pulgada2Am2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 6451
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float pulgada2Apie2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 6944
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000000;
+}
+float pulgada2Ayarda2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 7716
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float pie2Acm2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 929
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float pie2Am2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 929
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float pie2Apulgada2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 144
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float pie2Ayarda2(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1111
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000;
+}
+float yarda2Acm2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 8361
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float yarda2Am2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 8361
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000;
+}
+float yarda2Apulgada2(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1296
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float yarda2Apie2(float cant){
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 9
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float cm3Alitro(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax,1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 10000;
+}
+float cm3Am3(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 10
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float cm3Agalon(float cant) {
+    int intCant = (int)(cant * 10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2641
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion / 100000000;
+}
+float m3Acm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float m3Alitro(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float m3Agalon(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 264
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float litroAcm3(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float litroAm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float litroAgalon(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2641
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float galonAcm3(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 3785
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float galonAm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3785
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float galonAlitro(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3785
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float gramosAkg(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float gramosAonza(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3527
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000000;
+}
+float gramosAlibra(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2204
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000000;
+}
+float gramosAtonelada(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float kgAgramos(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float kgAonza(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 3527
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000;
+}
+float kgAlibra(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2205
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float kgAtonelada(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float onzaAgramos(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2835
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000;
+}
+float onzaAkg(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 2835
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float onzaAlibra(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 625
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float onzaAtonelada(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 2835
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000000000;
+}
+float libraAgramos(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 4535
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100;
+}
+float libraAkg(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 4535
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float libraAonza(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 16
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float libraAtonelada(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 4535
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float toneladaAgramos(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 10
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float toneladaAkg(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float toneladaAonza(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 35274
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float toneladaAlibra(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 2205
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float dinaAnm(float cant){
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000000;
+}
+float nmAdina(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 100000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float gcm3Akgm3(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 1000
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float gcm3Albpie3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 62428
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float gcm3Albgalon(float cant){
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 83454
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float kgm3Agcm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float kgm3Albpie3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 6242
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000000;
+}
+float kgm3Albgalon(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 8345
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000000;
+}
+float lbpie3Agcm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1601
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/1000000;
+}
+float lbpie3Akgm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 16018
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
+float lbpie3Albgalon(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1336
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float lbgalonAgcm3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 1198
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/100000;
+}
+float lbgalonAkgm3(float cant) {
+    int intCant = (int)(cant);
+    int conversion = 0;
+    __asm {
+        mov eax, 120
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion;
+}
+float lbgaloAlbpie3(float cant) {
+    int intCant = (int)(cant*10);
+    int conversion = 0;
+    __asm {
+        mov eax, 7480
+        mul intCant
+        mov conversion, eax
+    }
+    return (float)conversion/10000;
+}
